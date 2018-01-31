@@ -9,14 +9,6 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
-
 ## Package Description 
 
 The `fars` package reads data from Fatality Analysis Reporting System (FARS)  
