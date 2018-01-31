@@ -1,0 +1,101 @@
+---
+title: "fars"
+author: "Philip Gregory"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+## Package Description 
+
+The `fars` package reads data from Fatality Analysis Reporting System (FARS)  
+from the [National Highway Traffic Safety 
+Administration](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars).
+
+[FARS](https://en.wikipedia.org/wiki/Fatality_Analysis_Reporting_System) is a
+nationwide census, providing the American public yearly data, regarding fatal
+injuries suffered in motor vehicle traffic crashes.
+
+The package plots accidents on a map plot by year and state
+
+
+## Load Packages
+
+```{r}
+library(fars)
+library(maps)
+```
+
+
+## Included data
+
+Data files included within the package are:
+
+```{r}
+list.files(system.file("extdata", package = "fars"))
+```
+
+
+## Package Functions
+
+### Function `fars_read`
+
+This function loads data from a comma separated file taken from the  US
+National Highway Traffic Safetyc Administration's Fatality Analysis
+Reporting System (FARS).
+
+```{r}
+#fars_read(filename)
+```
+
+
+### Function `make_filename`
+
+This function requires a year as input and returns a full FARS filename.
+
+```{r}
+yr <- 2015
+make_filename(yr)
+```
+
+### Function `fars_read_years`
+
+This function used by `fars_summarize_years`
+
+```{r}
+fars_read_years(2013)
+```
+
+
+### Function `fars_summarize_years`
+
+This function summarises yearly accidents data, by month.
+
+```{r}
+#plot(fars_summarize_years(2015))
+#fars_summarize_years(c(2015, 2014))
+```
+
+### Function `fars_map_state`
+
+The function displays a state map plot including accidents location
+by year
+
+```{r}
+#state_num <- 49 # Utah
+#yr <- 2014
+#fars_map_state(state_num, yr)
+```
+
+
