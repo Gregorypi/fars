@@ -77,7 +77,7 @@ make_filename <- function(year) {
 #' @importFrom magrittr "%>%"
 #' @return a list of data frames
 #' @examples
-#' \ontrun{
+#' \dontrun{
 #' fars_read_years(years = 2013)
 #' }
 #'
