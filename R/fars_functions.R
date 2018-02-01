@@ -1,4 +1,4 @@
-
+globalVariables(c("MONTH", "STATE", "year", "n"))
 
 #' loads or "reads" in fars data
 #'
