@@ -16,13 +16,15 @@ globalVariables(c("MONTH", "STATE", "year", "n"))
 #' @return dataframe containing the selected file's data.
 #'
 #' @examples
-#' full_filename <- system.file('extdata', 'accident_2014.csv.bz2',
-#'                              package = 'farsdata')
+#'
+#' \dontrun{
 #' fars_read(filename = full_filename)
+#' }
 #'
 #' \dontrun{
 #' fars_read(filename = 'filedoesnotexist')
 #' }
+#'
 #' @export
 
 fars_read <- function(filename) {
@@ -46,14 +48,15 @@ fars_read <- function(filename) {
 #' @return a string that appends the input year to a filename
 #' to provide the full name of a valid fars file
 #' @examples
-#'#' make_filename(year = 2016)
+#' \dontrun{
+#' make_filename(year = 2016)
+#' }
 #'
 #' \dontrun{
 #' make_filename(year = 'two thousand sixteen') #  error
 #' }
 #'
-#'
-#' @export
+#'#' @export
 
 make_filename <- function(year) {
   year <- as.integer(year)
@@ -74,8 +77,9 @@ make_filename <- function(year) {
 #' @importFrom magrittr "%>%"
 #' @return a list of data frames
 #' @examples
-#' fars_read_years(years = c(2013, 2014, 2015))
+#' \ontrun{
 #' fars_read_years(years = 2013)
+#' }
 #'
 #' \dontrun{
 #' fars_read_years(years = 1066) # error
@@ -113,8 +117,9 @@ fars_read_years <- function(years) {
 #' @param one or more years as integer or string
 #' @return This function returns a data frame containing summary information
 #' @examples
-#' fars_summarize_years(years = c(2013, 2014, 2015))
+#' \dontrun{
 #' fars_summarize_years(years = 2013)
+#' }
 #'
 #' \dontrun{
 #' fars_summarize_years(years = 1066)
@@ -149,7 +154,10 @@ fars_summarize_years <- function(years) {
 #' @param year  An integer, or a string
 #' @return NULL
 #' @examples
+#'
+#' \dontrun{
 #' fars_map_state(22, 2015)
+#' }
 #'
 #' \dontrun{
 #' fars_map_state(1066, 0)   # error
