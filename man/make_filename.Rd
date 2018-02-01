@@ -23,11 +23,13 @@ This function requires a year as input and returns a full FARS filename.
 If the year cannot be coerced to integer, NA is used.
 }
 \examples{
-#' make_filename(year = 2016)
+\dontrun{
+make_filename(year = 2016)
+}
 
 \dontrun{
 make_filename(year = 'two thousand sixteen') #  error
 }
 
-
+#' @export
 }

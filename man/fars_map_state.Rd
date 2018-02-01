@@ -26,7 +26,10 @@ If there are no fatal crashes for the state and year, a message is provided.
 LONGITUD values > 900 are set to NA, LATITUDE values > 90 are set to NA
 }
 \examples{
+
+\dontrun{
 fars_map_state(22, 2015)
+}
 
 \dontrun{
 fars_map_state(1066, 0)   # error

@@ -24,11 +24,13 @@ This function loads data from a comma separated file taken from the  US
 If the file or permission to it does not exist, an error is produced.
 }
 \examples{
-full_filename <- system.file('extdata', 'accident_2014.csv.bz2',
-                             package = 'farsdata')
+
+\dontrun{
 fars_read(filename = full_filename)
+}
 
 \dontrun{
 fars_read(filename = 'filedoesnotexist')
 }
+
 }

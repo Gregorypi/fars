@@ -22,8 +22,9 @@ for the given years fars file produces a dataframe of year and month observation
 If the file for a specified year, or permission to it, does not exist, an error is produced.
 }
 \examples{
-fars_read_years(years = c(2013, 2014, 2015))
+\\ontrun{
 fars_read_years(years = 2013)
+}
 
 \dontrun{
 fars_read_years(years = 1066) # error
