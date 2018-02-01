@@ -22,7 +22,7 @@ for the given years fars file produces a dataframe of year and month observation
 If the file for a specified year, or permission to it, does not exist, an error is produced.
 }
 \examples{
-\\ontrun{
+\dontrun{
 fars_read_years(years = 2013)
 }
 

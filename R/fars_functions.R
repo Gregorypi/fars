@@ -12,7 +12,7 @@ globalVariables(c("MONTH", "STATE", "year", "n"))
 #'
 #' @note If the file or permission to it does not exist, an error is produced.
 #'
-#' @param The name of the file to be loaded.
+#' @param filename The name of the file to be loaded.
 #' @return dataframe containing the selected file's data.
 #'
 #' @examples
@@ -73,7 +73,7 @@ make_filename <- function(year) {
 #'
 #' @note If the file for a specified year, or permission to it, does not exist, an error is produced.
 #'
-#' @param one or more years as integer or string
+#' @param years One or more years as integer or string
 #' @importFrom magrittr "%>%"
 #' @return a list of data frames
 #' @examples
@@ -114,7 +114,7 @@ fars_read_years <- function(years) {
 #'
 #' @note If the file for a specified year, or permission to it, does not exist, an error is produced.
 #'
-#' @param one or more years as integer or string
+#' @param years One or more years as integer or string
 #' @return This function returns a data frame containing summary information
 #' @examples
 #' \dontrun{
