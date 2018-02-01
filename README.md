@@ -30,3 +30,6 @@ For this assignment you'll submit a link to the [GitHub repository](https://gith
 -   Does the README.md file for this directory have a [Travis badge](https://travis-ci.org/Gregorypi/fars)?
 -   Is the build of this package passing on [Travis badge](https://travis-ci.org/Gregorypi/fars)?
 -   Are the build logs for this package on [Travis badge](https://travis-ci.org/Gregorypi/fars) free of any errors, warnings, or notes?
+
+
+[![Build Status](https://travis-ci.org/Gregorypi/fars.svg?branch=master)](https://travis-ci.org/Gregorypi/fars)
