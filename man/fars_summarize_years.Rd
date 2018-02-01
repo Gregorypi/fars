@@ -7,7 +7,7 @@
 fars_summarize_years(years)
 }
 \arguments{
-\item{one}{or more years as integer or string}
+\item{years}{One or more years as integer or string}
 }
 \value{
 This function returns a data frame containing summary information

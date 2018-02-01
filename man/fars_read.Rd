@@ -7,7 +7,7 @@
 fars_read(filename)
 }
 \arguments{
-\item{The}{name of the file to be loaded.}
+\item{filename}{The name of the file to be loaded.}
 }
 \value{
 dataframe containing the selected file's data.

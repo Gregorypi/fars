@@ -7,7 +7,7 @@
 fars_read_years(years)
 }
 \arguments{
-\item{one}{or more years as integer or string}
+\item{years}{One or more years as integer or string}
 }
 \value{
 a list of data frames
