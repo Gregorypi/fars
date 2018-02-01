@@ -11,6 +11,7 @@ vignette: >
 
 ## Package Description 
 
+
 The `fars` package reads data from Fatality Analysis Reporting System (FARS)  
 from the [National Highway Traffic Safety 
 Administration](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars).
@@ -85,7 +86,7 @@ The function displays a state map plot including accidents location
 by year
 
 ```{r}
-#state_num <- 49 # Utah
+#state_num <- 32
 #yr <- 2014
 #fars_map_state(state_num, yr)
 ```

@@ -3,7 +3,7 @@ Type: Package
 Title: Loads data from Fatality Analysis Reporting System (FARS)
 Version: 0.1.0
 Author: Philip Gregory
-Maintainer: The package maintainer <yourself@somewhere.net>
+Maintainer: The package maintainer <philip_gregory@hotmail.co.uk>
 Description: Created for COURSERA: BUILDING R PACKAGES, Peer-graded Assignment.
 License: GPL-3
 Encoding: UTF-8
