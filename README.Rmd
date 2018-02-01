@@ -50,4 +50,4 @@ used?
 * Is the build of this package passing on [Travis badge](https://travis-ci.org/Gregorypi/fars)?
 * Are the build logs for this package on [Travis badge](https://travis-ci.org/Gregorypi/fars) free of any errors, warnings, or notes?
 
-
+https://travis-ci.org/Gregorypi/fars.svg?branch=master
