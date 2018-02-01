@@ -86,7 +86,7 @@ The function displays a state map plot including accidents location
 by year
 
 ```{r}
-#state_num <- 32
+#state_num <- 23
 #yr <- 2014
 #fars_map_state(state_num, yr)
 ```
