@@ -1,4 +1,4 @@
 library(testthat)
 library(fars)
 
-test_check("make_filename")
+test_check("fars")
